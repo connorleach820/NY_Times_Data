@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        var apiKey = "&api_key=cc91457b9e9d4fe59145149d045d4b5d";
+        var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+        url += '?' + $.param({
+          'api-key': "cc91457b9e9d4fe59145149d045d4b5d"
+            });
+        var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json/search?q=" + apiKey;
+        var numberOfRecords = 
+
+        $.ajax({
+          url: url,
+           method: 'GET',
+        }).done(function(result) {
+          console.log(result.response.docs);
+        }).fail(function(err) {
+          throw err;
+        });
+            function searchLength(){
+            for(var i; i<response.length; i++) {
+                
+            }
+
+        };
+         
+
+        //var numberOfRecords = 
+       
+    </script>
+</body>
+</html>
